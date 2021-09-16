@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+    /* main Styles */
+
+    html {
+    box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+    body {
+    background: #fafafa;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    }
+
+    header logo {
+    width: 100px;
+    height: 150px;
+    }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            color: teal;
+        }
+
+    .container {
+    width: 1000px;
+    margin: auto;
+    }
+
+    h1 {
+    font-size:30px;
+    text-align: center;
+    margin-top: 50px;
+    }
+
+     h2 {
+    font-size:30px;
+    text-align: left;
+    margin-top: 500px;
+    }
+      h3 {
+    font-size:20px;
+    text-align: left;
+    margin-top: 50px;
+    }
+      h4 {
+    font-size:20px;
+    text-align: left;
+    margin-top: 50px;
+    }
+       h5 {
+    font-size:20px;
+    text-align: left;
+    margin-top: 50px;
+    }
+    h6 {
+       font-size: 20px;
+       text-align: left;
+        margin-top: 50px;
+        }
+        p {
+    font-size:15px;
+    text-align:left;
+    margin-top: 10px;
+    }
+        p1 {
+            color:red;
+            font-size: 25px;
+            text-align: left;
+            margin-top: 10px;
+        }
+  
+    /* Navigation Styles */
+    nav {
+    background: #000000;
+    }
+        nav ul {
+            z-index: 5;
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+        }
+    nav ul li {
+    display: inline-block;
+    position: relative;
+    }
+    nav ul li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    padding: 15px 14px;
+    transition: 0.3s linear;
+    }
+
+    nav ul li:hover {
+    background: #126d9b;
+    }
+
+    nav ul li ul {
+    border-bottom: 5px solid #2ba0db;
+    display: none;
+    position: absolute;
+    width: 250px;
+    }
+    nav ul li ul li {
+    border-top: 1px solid #444;
+    display: block;
+    }
+    nav ul li ul li:first-child {
+    border-top: none;
+    }
+    nav ul li ul li a {
+    background: #373737;
+    display: block;
+    padding: 10px 14px;
+    }
+    nav ul li ul li a:hover {
+    background: #126d9b;
+    }
+    nav .fa.fa-angle-down {
+    margin-left: 6px;
+    }
+
+    article img {
+    width: 1600px;
+    height: 610px;
+    }
+
+    #slides {
+    display: none;
+    }
+     #spec {
+            font-size:18px;
+            text-align: left;
+            margin:80px 30px;
+        }
+        .image .text {
+            position: absolute;
+            top: 650px;
+            left: 50px;
+            color: #fff;
+            font-size: 40px;
+        }       
+        img.jpg{width:100%;}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/car.png" />
+        <div style="position:absolute; top:20px; left:1350px;"><a href="http://www.porsche.com/korea/ko/"><img src="img/lo.png"></a></div> 
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ex2.html">Exterior</a></li>
+                <li>
+                    <a href="#">Car information<i class='fa fa-angle-down'></i></a>
+                    <ul>                       
+                        <li><a href="setting.html">기술사양/제원표</a></li>
+                        <li><a href="service_center.html">서비스센터</a>
+                        <li><a href="interior.html">interior</a></li>
+                        <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+                        <li><a href="https://www.youtube.com/user/Porsche">유튜브 영상</a></li>
+                       
+                    </ul>
+                </li>
+                <!-- 검색 -->
+                <li class='sub-menu'>
+                    <a href="#">Search<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">google</a>
+                            <center>
+                                <form method=get action="http://www.google.co.kr/search" target="_blank">
+                                    <table bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <input type=text name=q size=20 maxlength=255 style=font-size:13pt value="" />
+                                                <input type=hidden name=ie value=utf-8 />
+                                                <input type=hidden name=oe value=utf-8 />
+                                                <input type=hidden name=hl value=ko />
+                                                <input type=submit name=btnG value="Google 검색" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </center>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 드롭다운 메뉴 슬라이드 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $('nav li').hover(
+            function () {
+                $('ul', this).stop().slideDown(200);
+            },
+            function () {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>
+ 
+        <h1>기술사양/제원표</h1>
+    <div style="position:absolute; top:230px; left:10px;"><img src="img/front.jpg" width="1500px" height="500px"/>    </div>   
+    <div style="position:absolute; top:800px; left:550px;"><img src="img/eng.jpg"></div> 
+    <div style="position:absolute; top:1350px; left:550px;"><img src="img/popo.png"></div>
+    <div id="spec">
+        
+        <h2>엔진</h2>       
+        <p>레이아웃 / 실린더 개수 - 6</p>
+        <p>배기량 (cc) 2,981</p> 
+        <p>엔진 레이아웃/구동 - 후륜 구동</p>
+        <p>출력 - 272 kW (370 마력)</p>
+        <p>최대 토크 - 45.9 kg.m at 1,700-5,000 rpm</p>
+        
+        <h3>연료 소비</h3>
+
+        <p> 도심연비 (km/l) 8.4</p>
+        <p>고속도로연비 (km/l) 11.0</p>
+        <p>복합연비 (km/l) 9.4</p>
+        <p> 복합 CO2 배출량 (g/km) 184</p>
+        <p>효율 등급 4 등급</p>
+       
+        <h4> 자동 변속기</h4>             
+
+       <p>레이아웃-후륜 구동</p>  
+       <p>변속기- 자동 7단</p>
+
+        <h5>차체</h5>
+        
+       <p> 전장 - 4,499 mm</p>
+       <p>차폭 - 1,808 mm</p>
+       <p>전고 - 1,294 mm</p> 
+       <p>휠 베이스 - 2,450 mm</p>
+       <p>항력 계수 - (Cd) 0.29</p>
+       <p>공차중량 - 1,525 kg</p>
+       <p>허용 가능 총 중량 - 1,655 kg</p>
+
+        <h6>가격</h6>
+             
+        <p>137,200,000 KRW 부터</p>
+        <p1>*옵션에 따라 가격이 달라질 수 있음</p1>
+    </div>
+  
+
+  
+
+</body>
+</html>

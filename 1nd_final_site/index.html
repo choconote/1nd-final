@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=10.0"/>
+    <title>test</title>
+    <script type="text/javascript" src="/data/201010/IJ12875323685154/packed.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery.slides.min.js"></script>
+     <!-- 1. Link to jQuery (1.8 or later), -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+     <!-- fotorama.css & fotorama.js. -->
+     <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+ 
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+     <!-- 3. Enjoy! -->
+     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+     <link rel="stylesheet" type="text/css" href="/data/201010/IJ12875323685154/style.css" />
+     <link rel="stylesheet" type="text/css" href="css/ex2.css"/>
+     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+    <script>
+        $(function () {
+            $("#slides").slidesjs({
+                width: 940,
+                height: 528
+            });
+        });
+        
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+        <img id="logo" src="img/car.png">
+        </a>
+        <!-- <div style="position:absolute; top:20px; left:150px;"><a href="http://www.porsche.com/korea/ko/"><img src="img/lo.png" /></a>
+        </div>  -->
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ex2.html">Exterior</a></li>
+                <li><a href="#">Car information<i class='fa fa-angle-down'></i></a>
+                <ul>
+                    <li><a href="setting.html">기술사양/제원표</a></li>
+                    <li><a href="service_center.html">서비스센터</a>
+                    <li><a href="interior.html">interior</a></li>
+                    <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+                    <li><a href="https://www.youtube.com/user/Porsche">유튜브 영상</a></li>                    
+                </ul>
+                </li>
+                <!-- 검색 -->
+                <li class='sub-menu'>
+                    <a href="#">Search<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">google</a>
+                            <center>
+                                <form method=get action="http://www.google.co.kr/search" target="_blank">
+                                    <table bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <input type=text name=q size=20 maxlength=255 style=font-size:13pt value="" />
+                                                <input type=hidden name=ie value=utf-8 />
+                                                <input type=hidden name=oe value=utf-8 />
+                                                <input type=hidden name=hl value=ko />
+                                                <input type=submit name=btnG value="Google 검색" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </center>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+  <script>
+    $('nav li').hover(
+        function () {
+            $('ul', this).stop().slideDown(200);
+        },
+        function () {
+            $('ul', this).stop().slideUp(200);
+        }
+    );
+</script>
+    
+     
+    <div class="image">
+        <img src="img/ho.jpg"width: 2000px/>
+        <div class="text">
+        </div>    
+    </div>
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer> -->
+</body>
+</html>

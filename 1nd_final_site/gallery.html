@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- 1. Link to jQuery (1.8 or later), -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    <!-- 3. Enjoy! -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/data/201010/IJ12875323685154/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+    <link rel="javascript" href="js/gallery.js"/>
+    <meta name="viewport" content="width=device-width">
+
+  
+    <script type="text/javascript" src="/data/201010/IJ12875323685154/packed.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="jquery.slides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slides").slidesjs({
+                width: 940,
+                height: 528
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="/SRC2/photobox/styles.css">
+    <link rel="stylesheet" href="/SRC2/photobox/photobox/photobox.css">
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src='/SRC2/photobox/photobox/jquery.photobox.js'></script>  
+    
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/car.png" />
+        <div style="position:absolute; top:20px; left:1350px;"><a href="http://www.porsche.com/korea/ko/"><img src="img/lo.png"></a></div> 
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ex2.html">Exterior</a></li>
+                <li>
+                    <a href="#">Car information<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li><a href="setting.html">기술사양/제원표</a></li>
+                        <li><a href="service_center.html">서비스센터</a>
+                        <li><a href="interior.html">interior</a></li>
+                        <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+                        <li><a href="https://www.youtube.com/user/Porsche">유튜브 영상</a></li>
+                    </ul>
+                </li>
+                <!-- 검색 -->
+                <li class='sub-menu'>
+                    <a href="#">Search<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">google</a>
+                            <center>
+                                <form method=get action="http://www.google.co.kr/search" target="_blank">
+                                    <table bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <input type=text name=q size=20 maxlength=255 style=font-size:13pt value="" />
+                                                <input type=hidden name=ie value=utf-8 />
+                                                <input type=hidden name=oe value=utf-8 />
+                                                <input type=hidden name=hl value=ko />
+                                                <input type=submit name=btnG value="Google 검색" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </center>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="http://localhost:13866/gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 드롭다운 메뉴 슬라이드 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <div class="fotorama">
+        <img src="img/fro.jpg">
+        <img src="img/be.jpg">
+        <img src="img/af.jpg">
+        <img src="img/re.jpg">
+        <img src="img/rear.jpg">
+        <img src="img/ta.jpg" />
+        <img src="img/tc.jpg" />
+        <img src="img/ts.jpg" />
+        <img src="img/rs.jpg">
+        <img src="img/sid.jpg">
+        <img src="img/sp.jpg" />
+        <img src="img/tech.jpg" />
+        <img src="img/ye.png" />
+        <img src="img/g.jpg" />
+        <img src="img/v.png" />
+    </div>
+   
+
+
+   
+</body>
+
+</html>

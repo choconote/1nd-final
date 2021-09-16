@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/exam1.css"/>
+    <title></title>
+
+
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/car.png" />
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ex2.html">Exterior</a></li>
+                <li>
+                    <a href="#">Car information<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <l<li><a href="setting.html">기술사양/제원표</a></li>
+                        <li><a href="service_center.html">서비스센터</a>
+                        <li><a href="interior.html">interior</a></li>
+                        <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+                        <li><a href="https://www.youtube.com/user/Porsche">VIDEO</a></li>
+                        <li><a href="setting.html">제원표</a></li>
+                    </ul>
+                </li>
+                <!-- 검색 -->
+                <li class='sub-menu'>
+                    <a href="#">Search<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">google</a>
+                            <center>
+                                <form method=get action="http://www.google.co.kr/search" target="_blank">
+                                    <table bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <input type=text name=q size=20 maxlength=255 style=font-size:13pt value="" />
+                                                <input type=hidden name=ie value=utf-8 />
+                                                <input type=hidden name=oe value=utf-8 />
+                                                <input type=hidden name=hl value=ko />
+                                                <input type=submit name=btnG value="Google 검색" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </center>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 드롭다운 메뉴 슬라이드 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $('nav li').hover(
+             () => {
+                $('ul', this).stop().slideDown(200);
+            },
+             () => {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>
+    <div class="image">
+        <img src="img/911p.jpg" />
+        <div class="text">
+            <p>Ever Ahead 911</p>
+        </div>
+    </div>
+    
+    <img src="img/mop.png",align="right" />
+    
+    <div id="spec">      
+        <h1>기술사양</h1>
+        <p>휠 베이스:2,405 mm</p>
+        <p>전장: 4,499mm</p>
+        <p>출력 272 kW (370 마력) at 6,500 1/min</p>
+        <p> 0 - 100km/h가속 4.4 secs (4.2 secs with Sport Chrono)</p>
+        <p> 최고 속도 293 km/h</p>
+        <p>연비 (km/l) 9.4</p>
+        <p>가격 137,200,000  부터</p>
+    </div>
+   
+</body>
+</html>

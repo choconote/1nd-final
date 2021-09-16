@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+     <!-- 1. Link to jQuery (1.8 or later), -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    <!-- 3. Enjoy! -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/data/201010/IJ12875323685154/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/ex2.css"/>
+ 
+    <script type="text/javascript" src="/data/201010/IJ12875323685154/packed.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery.slides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slides").slidesjs({
+                width: 940,
+                height: 528
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+       <img id="logo" src="img/car.png" />
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ex2.html">Exterior</a></li>
+                <li>
+                    <a href="#">Car information<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li><a href="setting.html">기술사양/제원표</a></li>
+                        <li><a href="service_center.html">서비스센터</a>
+                        <li><a href="interior.html">interior</a></li>
+                        <li><a href="DOWNLOAD.html">DOWNLOAD</a></li>
+                        <li><a href="https://www.youtube.com/user/Porsche">유튜브 영상</a></li>
+                    </ul>
+                </li>
+                <!-- 검색 -->
+                <li class='sub-menu'>
+                    <a href="#">Search<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">google</a>
+                            <center>
+                                <form method=get action="http://www.google.co.kr/search" target="_blank">
+                                    <table bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td>
+                                                <input type=text name=q size=20 maxlength=255 style=font-size:13pt value="" />
+                                                <input type=hidden name=ie value=utf-8 />
+                                                <input type=hidden name=oe value=utf-8 />
+                                                <input type=hidden name=hl value=ko />
+                                                <input type=submit name=btnG value="Google 검색" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </center>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 드롭다운 메뉴 슬라이드 -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $('nav li').hover(
+            function () {
+                $('ul', this).stop().slideDown(200);
+            },
+            function () {
+                $('ul', this).stop().slideUp(200);
+            }
+        );
+    </script>
+    <div class="fotorama">
+        <img src="img/bluep.jpg">
+        <img src="img/redp.jpg">
+        <img src="img/sli.jpg">
+        <img src="img/yellowp.jpg">
+        <img src="img/tc.jpg">
+        <img src="img/oran.jpg">
+        <img src="img/sky.jpg">
+      
+          
+    </div>
+   
+            <!-- <div class="image">
+                <img src="img/bluep.jpg" />
+
+                <div class="text">
+                    <p>Sapphire Blue</p>
+                </div>
+            </div>
+    <div class="image">
+        <img src="img/redp.jpg" />
+
+        <div class="text">
+            <p>Guard red</p>
+        </div>
+    </div>
+    <div class="image">
+        <img src="img/yellowp.jpg" />
+
+        <div class="text">
+            <p>Racing Yellow</p>
+        </div>
+    </div>
+    <div class="image">
+        <img src="img/sli.jpg" />
+
+        <div class="text">
+            <p>GT Sliver Matalic</p>
+        </div>
+    </div>
+    <div class="image">
+        <img src="img/tc.jpg" />
+
+        <div class="text">
+            <p>Jet Black</p>
+        </div>
+    </div>
+    <div class="image">
+        <img src="img/oran.jpg" />
+
+        <div class="text">
+            <p>Lava Orange</p>
+        </div>
+    </div>
+    <div class="image">
+        <img src="img/sky.jpg" />
+
+        <div class="text">
+            <p>Miami Blue</p>
+        </div> -->
+    </div>
+</body>
+</html>
